@@ -53,7 +53,20 @@
 # .. variable:: CPACK_DMG_SLA_LANGUAGES
 #
 #   Languages for which a license agreement is provided when mounting the
-#   generated DMG.
+#   generated DMG. A menu file consists of 9 lines of text. The first line is
+#   is the name of the language itself, uppercase, in English (e.g. German).
+#   The following lines are translations of the following strings:
+#   - Agree
+#   - Disagree
+#   - Print
+#   - Save...
+#   - You agree to the terms of the License Agreement when you click the
+#     "Agree" button.
+#   - Software License Agreement
+#   - This text cannot be saved. The disk may be full or locked, or the file
+#     may be locked.
+#   - Unable to print. Make sure you have selected a printer.
+#   
 #
 #   For every language in this list, CPack will try to find files
 #   ``<language>.menu.txt`` and ``<language>.license.txt`` in the directory
