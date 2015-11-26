@@ -367,7 +367,7 @@ int cmCPackDragNDropGenerator::CreateDMG(const std::string& src_dir,
 
   // use sla_dir if both sla_dir and license_file are set
   if(!cpack_license_file.empty() &&
-     !slaDirectory.empty())
+     !slaDirectory.empty() && !singleLicense)
     {
     cpack_license_file = "";
     }
